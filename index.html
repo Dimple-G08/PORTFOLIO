@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f8f9fc" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)">
-   <link rel="icon" href="photo.ico" type="image/x-icon">
+  <meta name="theme-color" content="#f8f9fc" id="theme-color-meta">
+  <link rel="icon" href="photo.ico" type="image/x-icon">
   <title>Dimple Gupta | Frontend Developer</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
     :root {
-      --bg-light: #f8f9fc;           /* very clean light background */
-      --bg-dark: #0f172a;            /* deep slate navy for dark mode */
-      --text-light: #1e293b;         /* dark slate text */
-      --text-dark: #e2e8f0;          /* light grayish for dark mode readability */
-      --accent: #64748b;             /* cool professional slate gray */
-      --primary: #f472b6;            /* soft modern coral/pink accent */
-      --hover: #ec4899;              /* stronger coral on hover */
+      --bg-light: #f8f9fc;
+      /* very clean light background */
+      --bg-dark: #0f172a;
+      /* deep slate navy for dark mode */
+      --text-light: #1e293b;
+      /* dark slate text */
+      --text-dark: #e2e8f0;
+      /* light grayish for dark mode readability */
+      --accent: #64748b;
+      /* cool professional slate gray */
+      --primary: #f472b6;
+      /* soft modern coral/pink accent */
+      --hover: #ec4899;
+      /* stronger coral on hover */
       --card-light: #ffffff;
       --card-dark: #1e293b;
     }
 
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       background-color: var(--bg-light);
@@ -77,7 +88,8 @@
       color: var(--hover);
     }
 
-    .nav-toggle, .close-btn {
+    .nav-toggle,
+    .close-btn {
       display: none;
       background: none;
       border: none;
@@ -149,8 +161,8 @@
       width: 100%;
       max-width: 380px;
       border-radius: 50%;
-      border: 8px solid rgba(255,255,255,0.9);
-      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      border: 8px solid rgba(255, 255, 255, 0.9);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
     }
 
     .section {
@@ -188,7 +200,7 @@
       background: var(--card-light);
       padding: 2rem;
       border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s;
     }
 
@@ -235,7 +247,7 @@
       background: var(--card-light);
       padding: 1.8rem 2.2rem;
       border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     }
 
     body.dark-mode .timeline-content {
@@ -262,7 +274,7 @@
       background: var(--card-light);
       padding: 2rem;
       border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
       transition: transform 0.3s;
     }
 
@@ -307,7 +319,8 @@
       justify-content: space-between;
     }
 
-    .contact-info, .contact-form {
+    .contact-info,
+    .contact-form {
       flex: 1 1 45%;
       padding: 25px;
       background-color: #fff;
@@ -458,7 +471,10 @@
 
     /* Mobile Navigation */
     @media (max-width: 768px) {
-      .nav-toggle { display: block; }
+      .nav-toggle {
+        display: block;
+      }
+
       .nav-links {
         display: none;
         position: fixed;
@@ -506,7 +522,8 @@
         flex-direction: column;
       }
 
-      .contact-info, .contact-form {
+      .contact-info,
+      .contact-form {
         width: 100%;
       }
 
@@ -521,13 +538,25 @@
     }
 
     @media (max-width: 480px) {
-      .intro-text h1 { font-size: 3.2rem; }
-      .intro-text h2 { font-size: 1.9rem; }
-      .section-title { font-size: 2rem; }
-      .logo { font-size: 1.9rem; }
+      .intro-text h1 {
+        font-size: 3.2rem;
+      }
+
+      .intro-text h2 {
+        font-size: 1.9rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .logo {
+        font-size: 1.9rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <header id="home">
@@ -553,7 +582,10 @@
     <div class="intro-text">
       <h1><span id="typed"></span></h1>
       <h2>Full-stack Developer</h2>
-      <p>B.Tech student in Computer Science and Engineering (2022–2026) with a strong foundation in full-stack development and software engineering. Experienced in developing responsive web applications, AI-driven solutions, and hackathon projects. Eager to apply technical expertise to innovative teams and deliver measurable impact.</p>
+      <p>B.Tech student in Computer Science and Engineering (2022–2026) with a strong foundation in full-stack
+        development and software engineering. Experienced in developing responsive web applications, AI-driven
+        solutions, and hackathon projects. Eager to apply technical expertise to innovative teams and deliver measurable
+        impact.</p>
       <a href="RESUME CSE1.pdf" class="button" download>Download CV</a>
     </div>
     <div class="intro-image">
@@ -564,7 +596,9 @@
   <section class="section" id="about">
     <h2 class="section-title" data-aos="fade-up">About Me</h2>
     <div class="about-text" data-aos="fade-up">
-      <p>Passionate B.Tech CSE student focused on creating clean, responsive and user-friendly web interfaces. Hands-on experience with React, JavaScript, APIs and modern frontend tools through internships and hackathons. Always eager to learn and contribute to meaningful projects.</p>
+      <p>Passionate B.Tech CSE student focused on creating clean, responsive and user-friendly web interfaces. Hands-on
+        experience with React, JavaScript, APIs and modern frontend tools through internships and hackathons. Always
+        eager to learn and contribute to meaningful projects.</p>
     </div>
   </section>
 
@@ -623,7 +657,8 @@
           <h3>Frontend Developer Intern</h3>
           <span class="timeline-date">Dec 2025 – Present</span>
           <h4>@ Client Analysis</h4>
-          <p>Designed and maintained reusable React.js components, reducing UI development time by 20%. Integrated RESTful APIs to enable real-time data rendering and dynamic user interactions.</p>
+          <p>Designed and maintained reusable React.js components, reducing UI development time by 20%. Integrated
+            RESTful APIs to enable real-time data rendering and dynamic user interactions.</p>
         </div>
       </div>
 
@@ -631,7 +666,8 @@
         <div class="timeline-content">
           <h3>Participant – SheBuilds Hackathon (2025)</h3>
           <span class="timeline-date">2025</span>
-          <p>Ranked among the top teams out of 2000+ applicants in a national women-focused hackathon (Noida). Delivered AI-Powered Roommate Matching project within 48-hour deadline.</p>
+          <p>Ranked among the top teams out of 2000+ applicants in a national women-focused hackathon (Noida). Delivered
+            AI-Powered Roommate Matching project within 48-hour deadline.</p>
         </div>
       </div>
     </div>
@@ -660,12 +696,14 @@
     <div class="contact-container">
       <div class="contact-info" data-aos="fade-right">
         <h3>Let's Connect</h3>
-        <p>If you have a project in mind, want to collaborate, or just want to say hello — feel free to reach out! 👇</p>
+        <p>If you have a project in mind, want to collaborate, or just want to say hello — feel free to reach out! 👇
+        </p>
         <ul>
           <li><i class="fas fa-envelope"></i> gdimple994@gmail.com</li>
         </ul>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/dimple-gupta-81b71a296/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/dimple-gupta-81b71a296/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
           <a href="https://github.com/dimplegupta" target="_blank"><i class="fab fa-github"></i></a>
           <a href="https://www.instagram.com/kashu_gupta08/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
@@ -673,20 +711,20 @@
 
       <div class="contact-form" data-aos="fade-left">
         <form action="https://api.web3forms.com/submit" method="POST">
-            <!-- Ye hidden field must hai – tumhara access key daalo -->
-            <input type="hidden" name="access_key" value="1f9874a3-1d5b-4873-bf75-fd0f006491df" />
+          <!-- Ye hidden field must hai – tumhara access key daalo -->
+          <input type="hidden" name="access_key" value="1f9874a3-1d5b-4873-bf75-fd0f006491df" />
 
-            <!-- Optional: Email subject customize kar sakte ho -->
-            <input type="hidden" name="subject" value="New Message from Portfolio Website" />
+          <!-- Optional: Email subject customize kar sakte ho -->
+          <input type="hidden" name="subject" value="New Message from Portfolio Website" />
 
-            <!-- Optional: Reply-to email set karo taaki direct reply kar sako -->
-            <input type="hidden" name="replyto" value="gdimple994@gmail.com" />
+          <!-- Optional: Reply-to email set karo taaki direct reply kar sako -->
+          <input type="hidden" name="replyto" value="gdimple994@gmail.com" />
 
-            <input type="text" name="name" placeholder="Your Name" required />
-            <input type="email" name="email" placeholder="Your Email" required />
-            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
-            <button type="submit">Send Message</button>
+          <button type="submit">Send Message</button>
         </form>
       </div>
     </div>
@@ -698,7 +736,8 @@
         <h3>Let's Stay Connected!</h3>
         <p>Thank you for visiting my portfolio. Feel free to connect with me on social platforms or drop an email.</p>
         <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/dimple-gupta-81b71a296/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.linkedin.com/in/dimple-gupta-81b71a296/" target="_blank"><i
+              class="fab fa-linkedin"></i></a>
           <a href="https://github.com/dimplegupta" target="_blank"><i class="fab fa-github"></i></a>
           <a href="https://www.instagram.com/kashu_gupta08/" target="_blank"><i class="fab fa-instagram"></i></a>
         </div>
@@ -720,9 +759,31 @@
       backSpeed: 35,
       loop: false
     });
+    function updateThemeColor() {
+      const meta = document.getElementById('theme-color-meta');
+      if (!meta) return;
+
+      if (document.body.classList.contains('dark-mode')) {
+        meta.setAttribute('content', '#0f172a');  // your --bg-dark
+      } else {
+        meta.setAttribute('content', '#f8f9fc');   // your --bg-light
+      }
+    }
+
+    // Run once when page loads (in case dark mode was already active)
+    updateThemeColor();
+
+    // Re-run every time toggle happens
+    // (override the original toggleDarkMode to also call this)
+    const originalToggle = toggleDarkMode;
+    toggleDarkMode = function () {
+      originalToggle();
+      updateThemeColor();
+    };
 
     function toggleDarkMode() {
       document.body.classList.toggle("dark-mode");
+      updateThemeColor();
     }
 
     function toggleNav() {
@@ -738,7 +799,3 @@
 </body>
 
 </html>
-
-
-
-
