@@ -4,9 +4,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f8f9fc" id="theme-color-meta">
   <link rel="icon" href="photo.ico" type="image/x-icon">
-  <title>Dimple Gupta | Frontend Developer</title>
+  <title>Dimple Gupta | Full-Stack Developer in Nagpur | React, Node.js & Next.js</title>
+  <meta name="description" content="Dimple Gupta is a Full-Stack Developer in Nagpur, Maharashtra, skilled in React.js, Node.js, Next.js, TypeScript, MySQL, MongoDB, REST APIs, JWT, OCR, YOLOv8 and OpenCV. Explore her projects, experience and portfolio." />
+  <meta name="keywords" content="Dimple Gupta, Full-Stack Developer, Full Stack Developer Nagpur, React Developer, Node.js Developer, Next.js Developer, JavaScript Developer, TypeScript Developer, Web Developer Nagpur, React Node.js Developer, AI OCR Developer, Portfolio" />
+  <meta name="author" content="Dimple Gupta" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="theme-color" content="#f8f9fc" />
+  <link rel="canonical" href="https://YOUR-DOMAIN.com/" />
+
+  <!-- Open Graph / LinkedIn / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dimple Gupta | Full-Stack Developer" />
+  <meta property="og:description" content="Full-Stack Developer specializing in React.js, Node.js, Next.js, TypeScript, databases, REST APIs and AI/OCR integrations." />
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/" />
+  <meta property="og:site_name" content="Dimple Gupta Portfolio" />
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/photo.jpg" />
+  <meta property="og:image:alt" content="Dimple Gupta - Full-Stack Developer" />
+
+  <!-- X / Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dimple Gupta | Full-Stack Developer" />
+  <meta name="twitter:description" content="Portfolio of Dimple Gupta, a Full-Stack Developer skilled in React.js, Node.js, Next.js, TypeScript and AI integrations." />
+  <meta name="twitter:image" content="https://YOUR-DOMAIN.com/photo.jpg" />
+
+  <!-- Search engines can discover the portfolio language and identity -->
+  <meta name="language" content="English" />
+  <meta name="geo.region" content="IN-MH" />
+  <meta name="geo.placename" content="Nagpur, Maharashtra, India" />
+
+  <!-- Person / Portfolio structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dimple Gupta",
+    "url": "https://YOUR-DOMAIN.com/",
+    "image": "https://YOUR-DOMAIN.com/photo.jpg",
+    "jobTitle": "Full-Stack Developer",
+    "description": "Full-Stack Developer specializing in React.js, Node.js, Next.js, TypeScript, REST APIs, databases and AI/OCR integrations.",
+    "email": "mailto:gdimple994@gmail.com",
+    "telephone": "+91-8855823022",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nagpur",
+      "addressRegion": "Maharashtra",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/dimple-gupta-81b71a296/",
+      "https://github.com/dimplegupta"
+    ],
+    "knowsAbout": [
+      "React.js",
+      "Node.js",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "MySQL",
+      "MongoDB",
+      "REST APIs",
+      "JWT Authentication",
+      "OCR",
+      "YOLOv8",
+      "OpenCV"
+    ]
+  }
+  </script>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <style>
@@ -469,6 +535,103 @@
       margin-top: 20px;
     }
 
+
+    /* Premium side-panel navigation */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: flex !important;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(82vw, 340px);
+        height: 100vh;
+        margin: 0;
+        padding: 90px 28px 40px;
+        background: rgba(15, 23, 42, 0.97);
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        gap: 8px;
+        box-shadow: -18px 0 45px rgba(0,0,0,.20);
+        transition: right .35s cubic-bezier(.4,0,.2,1);
+        z-index: 10000;
+        overflow-y: auto;
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .nav-links li {
+        width: 100%;
+      }
+
+      .nav-links li a {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 14px 16px;
+        border-radius: 12px;
+        color: #fff;
+        font-size: 1rem;
+        transition: .25s ease;
+      }
+
+      .nav-links li a:hover {
+        background: rgba(244,114,182,.15);
+        color: #f9a8d4;
+        transform: translateX(4px);
+      }
+
+      .nav-links .close-btn {
+        display: flex;
+        position: absolute;
+        top: 22px;
+        right: 22px;
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: rgba(255,255,255,.08);
+        font-size: 1.8rem;
+        line-height: 1;
+      }
+
+      .nav-links .close-btn:hover {
+        background: rgba(244,114,182,.22);
+      }
+
+      /* dark overlay behind the sidebar */
+      body.nav-open::after {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: rgba(2, 6, 23, .48);
+        backdrop-filter: blur(2px);
+        z-index: 9998;
+      }
+
+      header,
+      .nav-toggle,
+      .toggle-btn {
+        position: relative;
+        z-index: 10001;
+      }
+
+      body.nav-open {
+        overflow: hidden;
+      }
+    }
+
+    @media (min-width: 769px) {
+      .nav-links .close-btn {
+        display: none !important;
+      }
+    }
+
     /* Mobile Navigation */
     @media (max-width: 768px) {
       .nav-toggle {
@@ -559,14 +722,15 @@
 
 <body>
 
-  <header id="home">
-    <nav class="navbar">
-      <div class="logo">Dimple Gupta</div>
+  <header id="home" role="banner">
+    <nav class="navbar" aria-label="Primary navigation">
+      <div class="logo"><a href="#home" aria-label="Dimple Gupta home">Dimple Gupta</a></div>
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><button class="close-btn" onclick="toggleNav()">×</button></li>
@@ -578,23 +742,26 @@
     </nav>
   </header>
 
-  <section class="intro-section" data-aos="fade-up">
+  <main><section class="intro-section" data-aos="fade-up" aria-labelledby="hero-title">
     <div class="intro-text">
-      <h1><span id="typed"></span></h1>
-      <h2>Full-stack Developer</h2>
-      <p>B.Tech student in Computer Science and Engineering (2022–2026) with a strong foundation in full-stack
-        development and software engineering. Experienced in developing responsive web applications, AI-driven
-        solutions, and hackathon projects. Eager to apply technical expertise to innovative teams and deliver measurable
-        impact.</p>
-      <a href="RESUME CSE1.pdf" class="button" download>Download CV</a>
+      <h1 id="hero-title"><span id="typed"></span></h1>
+      <h2>Full-Stack Developer · React · Node.js · Next.js</h2>
+      <p>Full-Stack Developer with 8+ months of internship experience building React.js, Node.js, and
+        database-driven web applications. Experienced in responsive production websites, REST APIs,
+        real-time dashboards, authentication systems, and AI/OCR integrations. Ranked Top 50 out of
+        2,000+ teams at SheBuilds National Hackathon 2025.</p>
+      <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+        <a href="RESUME CSE1.pdf" class="button" download>Download Resume</a>
+        <a href="#contact" class="button">Let's Connect</a>
+      </div>
     </div>
     <div class="intro-image">
-      <img src="photo.jpg" alt="Dimple Gupta" />
+      <img src="photo.jpg" alt="Dimple Gupta, Full-Stack Developer in Nagpur" loading="eager" fetchpriority="high" />
     </div>
   </section>
 
-  <section class="section" id="about">
-    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+  <section class="section" id="about" aria-labelledby="about-title">
+    <h2 id="about-title" class="section-title" data-aos="fade-up">About Me</h2>
     <div class="about-text" data-aos="fade-up">
       <p>Passionate B.Tech CSE student focused on creating clean, responsive and user-friendly web interfaces. Hands-on
         experience with React, JavaScript, APIs and modern frontend tools through internships and hackathons. Always
@@ -602,110 +769,166 @@
     </div>
   </section>
 
-  <section class="section" id="skills">
-    <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+  <section class="section" id="skills" aria-labelledby="skills-title">
+    <h2 id="skills-title" class="section-title" data-aos="fade-up">Technical Skills</h2>
     <div class="skills-container" data-aos="zoom-in-up">
       <div class="skill-category">
-        <h3>Languages</h3>
+        <h3>Frontend</h3>
         <ul>
-          <li>C#</li>
-          <li>C++</li>
+          <li>React.js (Hooks, Context API, Memo)</li>
+          <li>JavaScript (ES6+)</li>
+          <li>HTML5 & CSS3</li>
+          <li>Responsive Design</li>
+          <li>Next.js</li>
+          <li>TypeScript</li>
         </ul>
       </div>
+
       <div class="skill-category">
-        <h3>Web Development</h3>
+        <h3>Backend</h3>
         <ul>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>JavaScript </li>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>RESTful API Design</li>
+          <li>JWT Authentication</li>
+          <li>MVC Architecture</li>
+          <li>OCR Integration</li>
         </ul>
       </div>
+
       <div class="skill-category">
-        <h3>Frameworks</h3>
-        <ul>
-          <li>React.js</li>
-          <li>Node.js </li>
-          <li>Express.js </li>
-          <li>MVC</li>
-          <li>ASP.NET(basics)</li>
-        </ul>
-      </div>
-      <div class="skill-category">
-        <h3>Databases & Tools</h3>
+        <h3>Database</h3>
         <ul>
           <li>MySQL</li>
-          <li>VS Code</li>
-          <li>Canva</li>
-          <li>Git & GitHub</li>
+          <li>MongoDB</li>
+          <li>Schema Design</li>
+          <li>3NF Normalization</li>
+          <li>Indexing & Query Optimization</li>
+          <li>DBMS</li>
         </ul>
       </div>
+
       <div class="skill-category">
-        <h3>Core Concepts</h3>
+        <h3>AI & Computer Vision</h3>
         <ul>
-          <li>OOP</li>
+          <li>AI API Integration</li>
+          <li>OCR</li>
+          <li>YOLOv8</li>
+          <li>OpenCV</li>
+        </ul>
+      </div>
+
+      <div class="skill-category">
+        <h3>CS Fundamentals</h3>
+        <ul>
+          <li>OOP — C#, C++, JavaScript</li>
           <li>Data Structures & Algorithms</li>
         </ul>
       </div>
-    </div>
+
+      <div class="skill-category">
+        <h3>Tools</h3>
+        <ul>
+          <li>GitHub & GitLab</li>
+          <li>Postman</li>
+          <li>VS Code</li>
+          <li>React DevTools</li>
+        </ul>
+      </div>
   </section>
 
-  <section class="section" id="experience">
-    <h2 class="section-title" data-aos="fade-up">Experience</h2>
+  <section class="section" id="experience" aria-labelledby="experience-title">
+    <h2 id="experience-title" class="section-title" data-aos="fade-up">Professional Experience</h2>
     <div class="experience-timeline">
       <div class="timeline-item" data-aos="fade-up">
         <div class="timeline-content">
-          <h3>Frontend Developer Intern</h3>
-          <span class="timeline-date">Dec 2025 – Present</span>
-          <h4>@ Client Analysis</h4>
-          <p>Designed and maintained reusable React.js components, reducing UI development time by 20%. Integrated
-            RESTful APIs to enable real-time data rendering and dynamic user interactions.</p>
+          <h3>Full Stack Web Development Intern</h3>
+          <span class="timeline-date">Aug 2026 – Present</span>
+          <h4>@ LifeAdve · Nagpur</h4>
+          <p>Developing and maintaining LifeAdve's official company website with responsive,
+            user-focused interfaces aligned with business and branding requirements. Implementing
+            reusable component-based frontend architecture to improve maintainability, consistency,
+            and development efficiency.</p>
         </div>
       </div>
 
-      <div class="timeline-item" data-aos="fade-up" data-aos-delay="150">
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
         <div class="timeline-content">
-          <h3>Participant – SheBuilds Hackathon (2025)</h3>
-          <span class="timeline-date">2025</span>
-          <p>Ranked among the top teams out of 2000+ applicants in a national women-focused hackathon (Noida). Delivered
-            AI-Powered Roommate Matching project within 48-hour deadline.</p>
+          <h3>Frontend Developer Intern</h3>
+          <span class="timeline-date">Dec 2025 – May 2026</span>
+          <h4>@ CLIDE-Analyser · Nagpur</h4>
+          <p>Built SmartSDS, an intelligent Safety Data Sheet Management System, with a React.js
+            frontend for PDF/image uploads, OCR-extracted data review, inline editing, API integration,
+            automatic section detection, duplicate flagging, version control, and audit trail features.
+            Delivered QA-ready functionality with zero data validation errors.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="timeline-content">
+          <h3>Web Designer Intern</h3>
+          <span class="timeline-date">Jun 2024 – Aug 2024</span>
+          <h4>@ Unisoft Technologies · Nagpur</h4>
+          <p>Delivered 5 responsive client pages using HTML, CSS, and JavaScript with zero
+            cross-browser issues across Chrome, Firefox, and Safari on the first QA pass.
+            Also completed certified training in C, C++, and .NET development.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="certifications">
-    <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+
+  <section class="section" id="projects" aria-labelledby="projects-title">
+    <h2 id="projects-title" class="section-title" data-aos="fade-up">Featured Projects</h2>
     <div class="cert-section">
       <div class="cert-card" data-aos="fade-up">
-        <h3>C++ Programming Certification</h3>
+        <h3>PPE Safety Detection Dashboard</h3>
+        <p><strong>React.js · Node.js · FastAPI · YOLOv8 · OpenCV · MySQL</strong></p>
+        <p>Built a supervisor-friendly dashboard with live video streams, real-time PPE violation
+          alerts, violation logs, safety statistics, and automated reporting. Reduced manual audit
+          logging from about 3 hours per shift to under 5 minutes; reports are generated in under
+          10 seconds for 50+ concurrent shift workers.</p>
+      </div>
+
+      <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>AI Roommate Matching System</h3>
+        <p><strong>Node.js · Express · MongoDB · JWT Auth · React</strong></p>
+        <p>Developed a full-stack roommate matching system with JWT authentication and a weighted
+          compatibility algorithm. Designed a normalized database structure and optimized profile-match
+          queries for fast results at a 1,000-row test scale.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="certifications" aria-labelledby="certifications-title">
+    <h2 id="certifications-title" class="section-title" data-aos="fade-up">Certifications</h2>
+    <div class="cert-section">
+      <div class="cert-card" data-aos="fade-up">
+        <h3>.NET Developer Certification</h3>
         <p>Unisoft Technologies, Nagpur</p>
       </div>
       <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
-        <h3>.NET Development Certification</h3>
-        <p>Unisoft Technologies, Nagpur</p>
-      </div>
-      <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
-        <h3>Frontend Web Development Certification</h3>
+        <h3>C & C++ Programming Certification</h3>
         <p>Unisoft Technologies, Nagpur</p>
       </div>
     </div>
   </section>
 
-  <section class="contact-section" id="contact">
-    <h2 class="contact-title" data-aos="zoom-in">Contact Me</h2>
+  <section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title" class="contact-title" data-aos="zoom-in">Contact Dimple</h2>
     <div class="contact-container">
       <div class="contact-info" data-aos="fade-right">
         <h3>Let's Connect</h3>
         <p>If you have a project in mind, want to collaborate, or just want to say hello — feel free to reach out! 👇
         </p>
         <ul>
+          <li><i class="fas fa-phone"></i> +91-8855823022</li>
           <li><i class="fas fa-envelope"></i> gdimple994@gmail.com</li>
+          <li><i class="fas fa-map-marker-alt"></i> Nagpur, Maharashtra · Relocating to Bangalore</li>
         </ul>
         <div class="social-links">
-          <a href="https://www.linkedin.com/in/dimple-gupta-81b71a296/" target="_blank"><i
+          <a href="https://www.linkedin.com/in/dimple-gupta-81b71a296/" target="_blank" rel="noopener noreferrer" aria-label="Dimple Gupta on LinkedIn" title="LinkedIn"><i
               class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/dimplegupta" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com/kashu_gupta08/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/dimplegupta" target="_blank" rel="noopener noreferrer" aria-label="Dimple Gupta on GitHub" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
 
@@ -729,21 +952,21 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="footer-section" data-aos="fade-up">
     <div class="footer-container">
       <div class="footer-content">
         <h3>Let's Stay Connected!</h3>
-        <p>Thank you for visiting my portfolio. Feel free to connect with me on social platforms or drop an email.</p>
+        <p>Full-Stack Developer building responsive, production-ready web applications. Let's connect and build something meaningful.</p>
         <div class="footer-socials">
-          <a href="https://www.linkedin.com/in/dimple-gupta-81b71a296/" target="_blank"><i
+          <a href="https://www.linkedin.com/in/dimple-gupta-81b71a296/" target="_blank" rel="noopener noreferrer" aria-label="Dimple Gupta on LinkedIn" title="LinkedIn"><i
               class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/dimplegupta" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com/kashu_gupta08/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/dimplegupta" target="_blank" rel="noopener noreferrer" aria-label="Dimple Gupta on GitHub" title="GitHub"><i class="fab fa-github"></i></a>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 Dimple Gupta. All Rights Reserved.</p>
+        <p>© 2026 Dimple Gupta. All Rights Reserved.</p>
       </div>
     </div>
   </footer>
@@ -787,13 +1010,30 @@
     }
 
     function toggleNav() {
-      document.getElementById("navLinks").classList.toggle("active");
+      const nav = document.getElementById("navLinks");
+      const isOpen = nav.classList.toggle("active");
+      document.body.classList.toggle("nav-open", isOpen);
     }
 
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         document.getElementById("navLinks").classList.remove("active");
+        document.body.classList.remove("nav-open");
       });
+    });
+
+    document.addEventListener("click", (event) => {
+      const nav = document.getElementById("navLinks");
+      const toggle = document.querySelector(".nav-toggle");
+      if (
+        window.innerWidth <= 768 &&
+        nav.classList.contains("active") &&
+        !nav.contains(event.target) &&
+        !toggle.contains(event.target)
+      ) {
+        nav.classList.remove("active");
+        document.body.classList.remove("nav-open");
+      }
     });
   </script>
 </body>
